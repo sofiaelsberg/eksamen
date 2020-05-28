@@ -2,6 +2,7 @@
 
 
 //DIALOGBOKS
+// Vi har fået inspiration til nedestående del fra https://www.w3schools.com/howto/howto_css_modals.asp
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -30,7 +31,11 @@ window.onclick = function (event) {
 }
 
 
+
+
+
 //BEREGNING AF STØRRELSE
+// Inspiration taget fra undervisningen d. 10/2-2020, hvor vi lavede lignende med BMI beregning
 
 document.getElementById("beregn").addEventListener("click", function () {
     const vurderingsplacering = document.getElementById("vurdering");
@@ -55,7 +60,12 @@ document.getElementById("beregn").addEventListener("click", function () {
 }, false);
 
 
+
+
+
+
 //KROPSTYPE IKONER
+//Dette laver kropstyperne klikbare og laver tekstfelt hvor enten 1, 2 eller 3 bliver indtastet alt efter hvad man vælger
 
 document.getElementById("smal").addEventListener("click", function (e) {
     const kropsform = document.getElementById("kropsform");
@@ -76,7 +86,11 @@ document.getElementById("stor").addEventListener("click", function (e) {
 
 
 
+
+
+
 //COLLAPSIBLE
+//Under shop, så man kan trykke på enten beskrivelse, pasform eller levering
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -95,7 +109,11 @@ for (i = 0; i < coll.length; i++) {
 
 
 
+
+
+
 //SLIDESHOW SHOP SIDE
+// Inspiration til slideshow fået fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
 
 var slideIndex = 1;
 showSlides(slideIndex);
