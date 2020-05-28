@@ -133,44 +133,50 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <h2 class="tekst1">Finde din rette størrelse</h2>
+                                <h2 class="tekst1">Find din rette størrelse</h2>
                                 <p class="tekst1">Problemer med at finde den rette størrelse? Indtast dine oplysninger, og find den rette størrelse. </p>
-                                <img class="dialogboks-billede" src="images/kurv.png" alt="ikon eksempel">
 
+                                <div class="str-container">
+                                    <div class="str-img-container">
+                                        <img class="dialogboks-billede" src="images/tre-front.jpg" alt="Sæt 1 forfra">
 
-                                <p>Din højde og vægt:</p>
+                                    </div>
 
-                                <div class="formelementer">
-                                    <label for="vaegt" class="etiket">Vægt i kg:</label>
-                                    <input type="number" class="indtastningsfelt" id="vaegt" step="0.5">
-                                </div> <br>
+                                    <div class="dialog-indhold">
+                                        <p>Din højde og vægt:</p>
 
-                                <div class="formelementer">
-                                    <label for="hoejde" class="etiket">Højde i meter:</label>
-                                    <input type="number" class="indtastningsfelt" step="0.01" id="hoejde">
-                                </div> <br>
+                                        <div class="formelementer">
+                                            <label for="vaegt" class="etiket">Vægt i kg:</label>
+                                            <input type="number" class="indtastningsfelt" id="vaegt" step="0.5">
+                                        </div> <br>
 
-                                <div class="formelementer">
-                                    <label for="kropsform" class="etiket">Kropstype:</label>
-                                    <input type="text" class="indtastningsfelt" id="kropsform">
-                                </div> <br>
+                                        <div class="formelementer">
+                                            <label for="hoejde" class="etiket">Højde i meter:</label>
+                                            <input type="number" class="indtastningsfelt" step="0.01" id="hoejde">
+                                        </div> <br>
 
-                                <form id="curve" class="figur">
+                                        <div class="formelementer">
+                                            <label for="kropsform" class="etiket">Kropstype:</label>
+                                            <input type="text" class="indtastningsfelt" id="kropsform">
+                                        </div> <br>
 
-                                    <img src="images/size-smal.png" height="80px" name="kropstype" value="Smal" checked id="smal"><br>
+                                        <form id="curve" class="figur">
 
-                                    <img src="images/size-alm.png" class="figur-normal" height="90px" name="kropstype" value="Almindelig" id="almindelig"><br>
+                                            <img src="images/size-smal.png" class="figur-smal" height="80px" name="kropstype" value="Smal" checked id="smal"><br>
 
-                                    <img src="images/size-stor.png" class="figur-stor" height="85px" name="kropstype" value="Stor" id="stor">
-                                </form> <br>
-                                <div>
+                                            <img src="images/size-alm.png" class="figur-normal" height="90px" name="kropstype" value="Almindelig" id="almindelig"><br>
 
-                                    <button type="button" id="beregn" class="knap">Find din størrelse</button>
-                                </div> <br>
+                                            <img src="images/size-stor.png" class="figur-stor" height="85px" name="kropstype" value="Stor" id="stor">
+                                        </form> <br>
+                                        <div>
 
-                                <div id="vurdering" class="vurderings_felt">Din idelle størrelse er:</div>
-                                <br><br>
+                                            <button type="button" id="beregn" class="knap">Find din størrelse</button>
+                                        </div> <br>
 
+                                        <div id="vurdering" class="vurderings_felt">Din idelle størrelse er:</div>
+                                        <br><br>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,6 +258,4 @@
 </body>
 
 <script src="js/script.js">
-</script>
-
-</html>
+</script></html>

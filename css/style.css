@@ -482,8 +482,6 @@ img {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
 /* Number text (1/4 etc) */
 .numbertext {
     font-family: roboto, 'sans serif';
@@ -555,7 +553,7 @@ img {
 }
 
 
-/*-----SLIDESHOW----*/
+/*-----SLIDESHOW SLUT----*/
 
 
 
@@ -677,6 +675,8 @@ footer h3 {
 
 
 
+
+
 /* -------STØRRELSES GUIDE ----- */
 
 /* The Modal (background) */
@@ -711,6 +711,16 @@ footer h3 {
     border: 1px solid #888;
     width: 80%;
 
+}
+
+.etiket {
+    font-family: 'roboto', 'sans serif';
+    font-size: 13px;
+}
+
+.vurderings_felt {
+    font-family: 'roboto', 'sans serif';
+    font-size: 15px;
 }
 
 .button {
@@ -880,7 +890,7 @@ footer h3 {
     }
 
     /*Dette fjerner burgermenu ikonet*/
-    label {
+    #logo-burger label {
         display: none;
     }
 
@@ -958,8 +968,6 @@ footer h3 {
         margin-top: -70px;
     }
 
-
-
     .video-overlay {
         background: rgba(0, 0, 0, 0);
         position: absolute;
@@ -974,10 +982,11 @@ footer h3 {
     }
 
 
-
     .video-wrapper {
         display: block;
     }
+
+
 
 
 
@@ -1027,16 +1036,12 @@ footer h3 {
         margin-bottom: 4%;
     }
 
-
-
-
     .insta-flex {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 5%;
     }
-
 
 
     .insta-container {
@@ -1100,6 +1105,40 @@ footer h3 {
     .content {
         font-size: 16px;
     }
+
+
+
+
+
+    /* STØRRELSESGUIDE*/
+
+    .dialogboks-billede {
+        display: block;
+        width: 100%;
+
+    }
+
+    .str-img-container {
+        margin-right: 30px;
+    }
+
+    .str-container {
+        display: flex;
+        margin: 10px 20px 10px 10px
+    }
+
+    .figur-normal {
+        height: 60px
+    }
+
+    .figur-stor {
+        height: 57px;
+    }
+
+    .figur-smal {
+        height: 52px;
+    }
+
 
 
 
@@ -1333,6 +1372,37 @@ footer h3 {
     .dropbtn {
         font-size: 14px;
     }
+
+
+
+
+    /*STØRRELSES GUIDE*/
+
+    .str-img-container {
+        margin-right: 50px;
+        width: 40%;
+    }
+
+    .figur-normal {
+        height: 80px
+    }
+
+    .figur-stor {
+        height: 78px;
+    }
+
+    .figur-smal {
+        height: 72px;
+    }
+
+
+    .modal-content {
+        width: 60%;
+    }
+
+
+
+
 
 
 

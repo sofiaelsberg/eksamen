@@ -1,5 +1,8 @@
 "use strict";
 
+
+//DIALOGBOKS
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -27,6 +30,7 @@ window.onclick = function (event) {
 }
 
 
+//BEREGNING AF STØRRELSE
 
 document.getElementById("beregn").addEventListener("click", function () {
     const vurderingsplacering = document.getElementById("vurdering");
@@ -34,38 +38,45 @@ document.getElementById("beregn").addEventListener("click", function () {
 
     const vaegt = Number(document.getElementById("vaegt").value);
     const hoejde = Number(document.getElementById("hoejde").value);
-    const bmi = vaegt / (hoejde * hoejde);
+    const str = vaegt / (hoejde * hoejde);
 
-    resultat.value = bmi.toLocaleString("da-DK", {
+    resultat.value = str.toLocaleString("da-DK", {
         maximumFractionDigits: 2
     });
 
-    if (bmi < 18.5) {
+    if (str < 18.5) {
         vurderingsplacering.innerHTML = "Din idelle størrelse er: <p>S</p>";
-    } else if (bmi >= 18.5 && bmi < 25) {
+    } else if (str >= 18.5 && str < 25) {
         vurderingsplacering.innerHTML = "Din idelle størrelse er: <p>M</p>";
-    } else if (bmi >= 25 && bmi < 30) {
+    } else if (str >= 25 && str < 30) {
         vurderingsplacering.innerHTML = "Din idelle størrelse er: <p>L</p>";
-    } else if (bmi >= 30) {
-        vurderingsplacering.innerHTML = "Vurdering: <p>Du er svært overvægtig</p>";
     }
 
 }, false);
 
+
+//KROPSTYPE IKONER
+
 document.getElementById("smal").addEventListener("click", function (e) {
     const kropsform = document.getElementById("kropsform");
-    kropsform.value = "Smal"
+    kropsform.value = "1"
 }, false);
 
 document.getElementById("almindelig").addEventListener("click", function (e) {
     const kropsform = document.getElementById("kropsform");
-    kropsform.value = "Almindelig"
+    kropsform.value = "2"
 }, false);
 
 document.getElementById("stor").addEventListener("click", function (e) {
     const kropsform = document.getElementById("kropsform");
-    kropsform.value = "Stor"
+    kropsform.value = "3"
 }, false);
+
+
+
+
+
+//COLLAPSIBLE
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -81,6 +92,10 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+
+
+
+//SLIDESHOW SHOP SIDE
 
 var slideIndex = 1;
 showSlides(slideIndex);
