@@ -790,6 +790,24 @@ footer h3 {
 
 
 
+/*------ UNIVERS ---------*/
+
+.univers-billeder {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1141,6 +1159,25 @@ footer h3 {
 
 
 
+    /*----UNIVERS-------*/
+
+    .univers-container {
+        display: flex;
+        margin-top: 10px;
+
+    }
+
+    .univers-billeder {
+        width: 32%;
+        margin: 4px;
+    }
+
+
+
+
+
+
+
 
     /*FOOTER*/
 
@@ -1430,5 +1467,19 @@ footer h3 {
     .insta-flex img:hover {
         opacity: .85;
     }
+
+
+
+
+
+    /*-----UNIVERS-------*/
+
+    .univers-billeder {
+        width: 30%;
+        margin: 20px;
+    }
+
+
+
 
 }
