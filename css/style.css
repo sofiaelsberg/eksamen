@@ -850,6 +850,10 @@ footer h3 {
     display: none;
 }
 
+#iphone-gone1 {
+    display: none;
+}
+
 .person {
     display: flex;
     flex-direction: column;
@@ -997,7 +1001,6 @@ footer h3 {
         display: block;
         display: flex;
         flex-direction: row;
-        padding-right: px;
         position: absolute;
         top: 25px;
         right: 16px;
